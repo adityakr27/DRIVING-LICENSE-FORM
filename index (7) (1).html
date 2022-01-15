@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>ITZEAZY</title>
+      <link rel="stylesheet" href="text/css" href="http://www.maketecheasier.com/use-google-roboto-font-everywhere/2012/03/15"/>
+      <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans" />
+      <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize-opentype.css/0.2.3/normalize-opentype.css">
+      <link rel="stylesheet" href="index.css">
+      <link rel="stylesheet" href="mobile.css">
+   </head>
+    <body>
+       <a href="https://itzeazy.in/"> <img src="logo.jif.png" alt="logo" style="height: 70px;" class="logo"></a>
+       <div>
+           <h2 class="h2">NEW DRIVING LICENSE</h2>
+         </div>
+       <div>
+           <h2 class="sub-h2">Lets get started</h2>
+      </div>
+      <div>  <p class="p-center">Add your details &nbsp;(As per your registered records) </p></div><br>
+        <form class="form">
+            <table id="step1">
+                <tbody >
+                    <tr>
+                        <td>
+                          <div style="text-align: center;">
+                            <input type="text" placeholder="Your name" class="name-input" id="name">
+                          </div>
+                          </td>
+                    </tr>
+                    <tr>
+                        <td>
+                   
+                          
+                      <tr>
+                      <td>
+                            <div class="name-input2" id="residence" >
+                              <div class="select-box">
+                                <div class="options-container">
+                                  <div class="option">
+                                    <input
+                                      type="radio"
+                                      class="radio"
+                                      id="Haryana"
+                                      name="category"
+                                    />
+                                    <label for="Haryana">Haryana</label>
+                                  </div>
+                        
+                                  <div class="option">
+                                    <input type="radio" class="radio" id="Delhi" name="category" onclick="handleClick();" />
+                                    <label for="Delhi">Delhi</label>
+                                  </div>
+                        
+                                  <div class="option">
+                                    <input type="radio" class="radio" id="jaipur" name="category" onclick="handleClick();" />
+                                    <label for="Jaipur">Jaipur</label>
+                                  </div>
+                        
+                                  <div class="option">
+                                    <input type="radio" class="radio" id="Ahmedabad" name="category" onclick="handleClick();" />
+                                    <label for="Ahmedabad">Ahmedabad</label>
+                                  </div>
+                        
+                                  <div class="option">
+                                    <input type="radio" class="radio" id="Raipur" name="category" onclick="handleClick();" />
+                                    <label for="Raipur">Raipur</label>
+                                  </div>
+                        
+                                  <div class="option">
+                                    <input type="radio" class="radio" id="Ranchi" name="category" onclick="handleClick();" />
+                                    <label for="Ranchi">Ranchi</label>
+                                  </div>
+                        
+                                  <div class="option">
+                                    <input type="radio" class="radio" id="Patna" name="category"onclick="handleClick();"  />
+                                    <label for="Patna">Patna</label>
+                                  </div>
+                        
+                                  <div class="option">
+                                    <input type="radio" class="radio" id="Chennai" name="category" onclick="handleClick();"/>
+                                    <label for="Chennai">Chennai</label>
+                                  </div>
+                        
+                                  <div class="option">
+                                    <input type="radio" class="radio" id="Manipur" name="category"  onclick="handleClick();"/>
+                                    <label for="Manipur">Manipur</label>
+                                  </div>
+                                </div>
+                        
+                                
+                                  <div class="selected"> Place of residence<span class="star">*</span></div>
+                                  
+                                
+                              </div>
+                            </div>
+                           </td>
+                        </tr>
+                       <tr>
+                           <td>
+                              <br>
+                               <p style="margin-top: -2%;" class="nature" >Nature of driving license</p>
+                          <br><br>
+                               <label class="private">  
+                                <input type="radio"  class="radio" id="private" name="radio" value="Private">&nbsp;&nbsp;Private
+                                <span class="checkmark"></span>
+                              </label>
+                             
+                              <label class="commercial">
+                                <input type="radio" id="commercial" class="radio" name="radio" value="Commercial"> &nbsp;&nbsp; Commercial
+                                <span class="checkmark"></span>
+                              </label>
+                           </td>
+                        </tr>
+                     
+                    </tbody>
+                </table>
+                
+                
+            
+             <table id="step2" style="display:none;">
+                <tbody >
+                    <tr>
+                      <td>
+
+                      <div class="box" id="vehicle">
+      
+
+                        <div class="main-box">
+                          <div class="option-box">
+                  
+                            <div class="menu">
+                              <input type="radio" class="part" id="Two wheeler" name="category" />
+                              <label for="Two wheeler">Two wheeler</label>
+                            </div>
+                  
+                            <div class="menu">
+                              <input type="radio" class="part" id="Four wheeler" name="category" />
+                              <label for="Four wheeler">Four wheeler</label>
+                            </div>
+                  
+                            <div class="menu">
+                              <input type="radio" class="part" id="Both(Two and four wheeler)" name="category" />
+                              <label for="Both(Two and four wheeler)">Both(Two and four wheeler)</label>
+                            </div>
+                          </div>
+                  
+                          <div class="heading-box" id="headingbox">
+                            Required class of driving License<span class="star">*</span>
+                          </div>
+                        </div>
+                      </div>
+                    </td>
+                  </tr> 
+                
+                   <tr>
+                      <td>
+
+                        <div class="container" id="license">
+      
+
+                          <div class="top-box">
+                            <div class="choice-box">
+                    
+                              <div class="interior">
+                                <input type="radio" class="choice" id="Learning driving License" name="choice" />
+                                <label for="Learning driving License">Learning driving License</label>
+                              </div>
+                    
+                              <div class="interior">
+                                <input type="radio" class="choice" id="Permanent driving License" name="choice" />
+                                <label for="Permanent driving License">Permanent driving License</label>
+                              </div>
+                              <div class="interior">
+                                <input type="radio" class="choice" id="Commercial driving License" name="choice" />
+                                <label for="Commercial driving License">Commercial driving License</label>
+                              </div>
+                    
+                              <div class="interior">
+                                <input type="radio" class="choice" id="Both(Learning and Permanent driving License)" name="choice" />
+                                <label for="Both(Learning and Permanent driving License)">Both(Learning and Permanent driving License)</label>
+                              </div>
+                            </div>
+                    
+                            <div class="head-box">
+                              Required type of driving License<span class="star">*</span>
+                            </div>
+                          </div>
+                        </div>
+                       
+                        </tr> 
+                      </td>
+                   <tr >
+                   
+					 <td><button class="btn" id="step2-bck-btn" ><span class="proo">&#60;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> Back</button></td>
+                   </tr>
+                  
+                </tbody>
+             </table>
+             
+             
+             
+                 <table id="step3" style="display:none;">
+                <tbody >
+                   <tr>
+                      <td>
+                        <div class="tank" id="address">
+      
+
+                          <div class="up-box">
+                            <div class="inner-box">
+                    
+                              <div class="inside">
+                                <input type="radio" class="choose" id="Passport" name="choose" />
+                                <label for="Passport">Passport</label>
+                              </div>
+                    
+                              <div class="inside">
+                                <input type="radio" class="choose" id="Aadhar Card" name="choose" />
+                                <label for="Aadhar Card">Aadhar Card</label>
+                              </div>
+                              <div class="inside">
+                                <input type="radio" class="choose" id="Voter ID" name="choose" />
+                                <label for="Voter ID">Voter ID</label>
+                              </div>
+                              <div class="inside">
+                                <input type="radio" class="choose" id="PAN Card" name="choose" />
+                                <label for="PAN Card">PAN Card</label>
+                              </div>
+                    
+                              <div class="inside">
+                                <input type="radio" class="choose" id="Ration Card" name="choose" />
+                                <label for="Ration Card">Ration Card</label>
+                              </div>
+                            </div>
+                            <div class="chief-box">
+                              Available proof of current address<span class="star">*</span>
+                            </div>
+                          </div>
+                        </div>
+                          </td>
+                   </tr>
+                   <tr>
+                      <td>
+                        <div class="holder" id="DOB">
+      
+
+                          <div class="major-box">
+                            <div class="minor-box">
+                    
+                              <div class="outside">
+                                <input type="radio" class="pick" id="Passport" name="pick" />
+                                <label for="Passport">Passport</label>
+                              </div>
+                    
+                              <div class="outside">
+                                <input type="radio" class="pick" id="School leaving certificate" name="pick" />
+                                <label for="School leaving certificate">School leaving certificate</label>
+                              </div>
+                              <div class="outside">
+                                <input type="radio" class="pick" id="10th pass certificate" name="pick" />
+                                <label for="10th pass certificate">10th pass certificate</label>
+                              </div>
+                              <div class="outside">
+                                <input type="radio" class="pick" id="PAN Card" name="pick" />
+                                <label for="PAN Card">PAN Card</label>
+                              </div>
+                    
+                            </div>
+                            <div class="leader-box">
+                              Available proof of DOB<span class="star">*</span>
+                            </div>
+                          </div>
+                        </div>
+       </td>
+                   </tr>
+                   <tr >
+                      <td><button class="btn" id="step3-bck-btn" ><span class="proo">&#60;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> Back</button></td>
+                   </tr>
+                  
+                </tbody>
+             </table>
+             
+            
+            
+        </form>
+		 <table>
+             <tr>
+             <td>
+                            <div id="progressbar">
+                                <div id="progressbar-div"></div>
+                            </div>
+                        </td>
+                        
+            </tr>
+            </table>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="index.js"></script>
+       
+    </body>
+    
+</html>
